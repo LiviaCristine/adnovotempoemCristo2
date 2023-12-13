@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040322;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Faz com que o corpo ocupe toda a altura da viewport */
+}
+
+.contribuicoes {
+    width: auto; /* Ajusta automaticamente a largura mantendo a proporção original */
+    max-width: 100%; /* Define uma largura máxima em telas maiores */
+    max-height: 70vh; /* Define uma altura máxima para a imagem */
+    margin: 40px auto 0; /* Ajusta a margem superior e centraliza horizontalmente */
+}
+
+.cabecalho {
+    display: flex;
+    position: absolute;
+    top: 10px; /* Ajuste conforme necessário para posicionar o texto */
+    left: 10px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #9a9898;
+    text-decoration: none;
+    z-index: 1; /* Garante que o link esteja acima da imagem */
+}
+
+
+
+/* Media query para dispositivos menores (por exemplo, até 600 pixels de largura) */
+@media (max-width: 600px) {
+    .contribuicoes {
+        max-width: none; /* Remove o limite máximo para dispositivos menores */
+    }
+
+    .cabecalho__menu__link {
+        position: static; /* Remove o posicionamento absoluto em dispositivos menores */
+        margin-top: 10px; /* Adicione margem superior para separar o link da imagem */
+    }
+}

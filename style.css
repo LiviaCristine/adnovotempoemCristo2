@@ -1,0 +1,232 @@
+
+
+
+:root {
+    --cor-preta: #000000;
+    --cor-fonte: #f7f7f7;
+    --fonte-principal: 'inter';
+    --cor-detalhes: #9a9898;
+ }
+ :root {
+    --cor-preta: #000000;
+    --cor-fonte: #f7f7f7;
+    --fonte-principal: 'inter';
+    --cor-detalhes: #9a9898;
+}
+
+/* Restante do seu código não alterado */
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1fr é uma unidade de fração, que se ajusta dinamicamente ao espaço disponível */
+    color: #f7f7f7;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 1em; /* Ajuste conforme necessário */
+}
+
+.secundario__imagem {
+    width: 100%;
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+
+
+/* Media query para telas menores (max-width: 768px) */
+@media (max-width: 768px) {
+    .menu, .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu__redes-sociais {
+        margin-top: 10px;
+    }
+
+    .menu__secundario {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+
+
+    
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+ body {
+     background-color: #00030c;
+     margin: 0;
+     padding: 0;  
+     max-width: none;
+ }
+ 
+ .menu {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px !important;
+ }
+ 
+ .menu a {
+     color: var(--cor-detalhes);
+     text-decoration: none;
+     font-size: 13px;
+     font-family: var(--fonte-principal);
+     margin-left: 10px !important;
+ }
+ 
+ .menu__redes-sociais i {
+     color: var(--cor-detalhes);
+     margin-right: 10px !important;
+ }
+ 
+ .nome {
+     font-family: 'Cormorant Garamond';
+     text-align: center;
+     font-size: 24px;
+     margin: 0 auto !important;
+ }
+ 
+ .container {
+     display: flex;
+     justify-content: space-between;
+     padding: 10px 20px !important;
+ }
+ 
+ .nome {
+     font-family: 'Cormorant Garamond';
+     font-size: 19px;
+ }
+ 
+ .menu__secundario {
+     display: flex;
+     align-items: center;
+     margin-left: 1px !important;
+
+ }
+ 
+ .biblia {
+     width: 100%; /* Ajustado para ocupar a largura total */
+     max-width: 200px; /* Adicionado um máximo para evitar que a imagem fique muito grande */
+     height: auto;
+     margin-right: 10px;
+ }
+
+ #carouselExampleCaptions img {
+    width: 30em; /* ajuste conforme necessário */
+    height: 40em; /* ajuste conforme necessário */
+  }
+  
+  .seta{
+    font-size: 1px;
+    align-items: center;
+  }
+
+  .saiba{
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 0.4em !important;
+  }
+ 
+     .container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: #f7f7f7;
+    } 
+
+    .secundario {
+        align-items: center;
+        margin: 0 10em;
+    }
+
+    .descricao__texto{
+        color: #9a9898;
+    }
+
+    .container__descricao {
+        padding: 2em;
+    }
+
+    .secundario__imagem {
+        width: 80%;
+        margin-top: 40px;
+        margin-right: 10px;
+    }
+
+    .principal{
+        margin-left: 10px;
+    }
+
+    .principal__conteudo {
+        background-color: #fff;
+        text-align: center;
+        font-family: 'Cormorant Garamond';
+    }
+    
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 100px;
+    }
+
+    .rodape {
+        padding: 24px;
+        background-color: #f7f7f7;
+        position: relative;
+        height: 40vh; /* Ajuste conforme necessário para a altura total do rodapé */
+        margin-top: -50px; /* Ajuste conforme necessário para o espaço entre a imagem e o início do rodapé */
+      }
+      
+      .banner {
+        max-width: 50%;
+        display: block;
+        height: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: -50px; /* Ajuste conforme necessário para o espaço entre a imagem e o final do rodapé */
+      }
+  
+
+      @media (max-width: 768px) {
+        .menu, .container {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .menu__redes-sociais {
+          margin-top: 10px;
+        }
+      
+        .menu__secundario {
+          margin-left: 0;
+          margin-top: 10px;
+        }
+      
+        .rodape {
+          height: 10vh; /* Ajuste conforme necessário para a altura total do rodapé em telas menores */
+          margin-top: 0; /* Resetando a margem superior */
+        }
+      
+        .banner {
+          margin-bottom: 0; /* Resetando a margem inferior */
+        }
+      }
+      
+        
+    
+ 
